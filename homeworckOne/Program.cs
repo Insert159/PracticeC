@@ -139,9 +139,15 @@
 
 Console.WriteLine("Введите число");
 int number = int.Parse(Console.ReadLine());
+if (number>100){
 int digitIndex = 2; 
 int digit = number.ToString()[digitIndex] - '0';
 Console.Write("Третья цифра трехзначного номера = "+digit);
+}
+else {
+    Console.Write("Третьей цифры нет");
+}
+
 
 
 
